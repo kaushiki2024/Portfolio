@@ -1,0 +1,67 @@
+{
+  "name": "Kaushiki Mishra",
+  "tagline": "C++ | Python | DSA Enthusiast | Competitive Programmer",
+  "bio": "Motivated computer science student specializing in AI/ML with hands-on experience in Python, OpenCV, and data analytics. Eager to leverage problem-solving and teamwork skills in a dynamic environment.",
+  "contact": {
+    "email": "kaushikim80@gmail.com",
+    "phone": "8005327553",
+    "social": [
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/kaushiki-mishra-aa37542a4/" },
+      { "name": "GitHub", "url": "https://github.com/kaushiki2024" },
+      { "name": "LeetCode", "url": "https://leetcode.com/u/Kaushiki365/" },
+      { "name": "Codeforces", "url": "https://codeforces.com/profile/Coder_future" },
+      { "name": "CodeChef", "url": "https://www.codechef.com/users/kaushiki22" }
+    ]
+  },
+  "skills": {
+    "Programming": ["Python", "C++", "C", "Java", "Django", "Flask", "HTML", "CSS", "JavaScript"],
+    "Databases": ["MySQL", "MongoDB"],
+    "Tools": ["Git", "GitHub", "Jupyter", "Linux", "Windows", "Anaconda"],
+    "Data/ML": ["Pandas", "NumPy", "Power BI", "OpenCV", "MediaPipe", "scikit-learn"],
+    "Soft Skills": ["Problem-Solving", "Teamwork", "Communication", "Adaptability"]
+  },
+  "projects": [
+    {
+      "title": "Trylia: Virtual Dressing Room",
+      "status": "In progress",
+      "description": "Users can try clothes virtually using a webcam and real-time overlay.",
+      "tech": ["Python", "OpenCV", "MediaPipe", "Deep Learning", "AR engine"]
+    },
+    {
+      "title": "Face Detection using OpenCV",
+      "description": "Real-time face detection with Haar Cascade classifiers.",
+      "tech": ["Python", "OpenCV"]
+    }
+  ],
+  "experience": [
+    {
+      "role": "Software Developer Trainee",
+      "company": "Excellent Softwares, Noida",
+      "year": "2025 (45 days)",
+      "details": [
+        "Developed Python-based internal apps",
+        "Contributed to debugging and testing",
+        "Collaborated in agile teams"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Tech. Computer Science (AI & ML)",
+      "college": "Buddha Institute of Technology, Gorakhpur",
+      "years": "2022–2026",
+      "meta": "CGPA: 78.89"
+    },
+    { "degree": "Class XII", "college": "Carmel Girls Inter College", "years": "2021" },
+    { "degree": "Class X", "college": "Carmel Girls Inter College", "years": "2019" }
+  ],
+  "achievements": [
+    "Solved 476 problems on CodeChef, 30 on LeetCode, active on Codeforces",
+    "CSE Department Honors Award (1st–3rd year)",
+    "Participant in Smart India Hackathon (SIH)"
+  ],
+  "certifications": [
+    "AI Dashboards using Microsoft Power BI (2025)",
+    "AI Tools Workshop – Be10x (2025)"
+  ]
+}
