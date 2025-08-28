@@ -37,7 +37,7 @@ export function About() {
                 className="relative w-80 h-80"
               >
                 <Image
-                  src="/profile.jpg"
+                  src="/profile.svg"
                   alt={site.name}
                   fill
                   className="rounded-full object-cover shadow-2xl"
