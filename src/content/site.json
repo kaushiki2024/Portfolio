@@ -1,36 +1,65 @@
 {
   "name": "Kaushiki Mishra",
-  "tagline": "C++ | Python | DSA Enthusiast | Competitive Programmer",
-  "bio": "Motivated computer science student specializing in AI/ML with hands-on experience in Python, OpenCV, and data analytics. Eager to leverage problem-solving and teamwork skills in a dynamic environment.",
+  "tagline": "Aspiring Data Scientist",
+  "typewriter": [
+    "Aspiring Data Scientist",
+    "AI/ML Enthusiast", 
+    "Analytics Explorer",
+    "Competitive Programmer"
+  ],
+  "bio": "Driven computer science student specializing in AI and Machine Learning, with experience in Python, OpenCV, data analytics, and competitive programming. Passionate about building intelligent solutions and pursuing a career in Data Science.",
+  "coreStrengths": [
+    "Analytical Thinking",
+    "Teamwork", 
+    "Problem Solving"
+  ],
   "contact": {
     "email": "kaushikim80@gmail.com",
     "phone": "8005327553",
     "social": [
-      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/kaushiki-mishra-aa37542a4/" },
-      { "name": "GitHub", "url": "https://github.com/kaushiki2024" },
-      { "name": "LeetCode", "url": "https://leetcode.com/u/Kaushiki365/" },
-      { "name": "Codeforces", "url": "https://codeforces.com/profile/Coder_future" },
-      { "name": "CodeChef", "url": "https://www.codechef.com/users/kaushiki22" }
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/kaushiki-mishra-aa37542a4/", "icon": "linkedin" },
+      { "name": "GitHub", "url": "https://github.com/kaushiki2024", "icon": "github" },
+      { "name": "LeetCode", "url": "https://leetcode.com/u/Kaushiki365/", "icon": "code" },
+      { "name": "Codeforces", "url": "https://codeforces.com/profile/Coder_future", "icon": "code" },
+      { "name": "CodeChef", "url": "https://www.codechef.com/users/kaushiki22", "icon": "code" }
     ]
   },
   "skills": {
-    "Programming": ["Python", "C++", "C", "Java", "Django", "Flask", "HTML", "CSS", "JavaScript"],
-    "Databases": ["MySQL", "MongoDB"],
-    "Tools": ["Git", "GitHub", "Jupyter", "Linux", "Windows", "Anaconda"],
-    "Data/ML": ["Pandas", "NumPy", "Power BI", "OpenCV", "MediaPipe", "scikit-learn"],
-    "Soft Skills": ["Problem-Solving", "Teamwork", "Communication", "Adaptability"]
+    "Programming & Data Science": [
+      "Python", "C++", "R", "SQL", "Java", 
+      "Pandas", "NumPy", "Matplotlib", "Seaborn", 
+      "scikit-learn", "TensorFlow", "PyTorch"
+    ],
+    "Web & Tools": [
+      "Django", "Flask", "HTML", "CSS", "JavaScript", 
+      "Git", "GitHub", "Jupyter", "Linux", "Power BI"
+    ],
+    "Soft Skills": [
+      "Analytical Thinking", "Problem Solving", 
+      "Team Collaboration", "Communication"
+    ]
   },
   "projects": [
     {
       "title": "Trylia: Virtual Dressing Room",
-      "status": "In progress",
-      "description": "Users can try clothes virtually using a webcam and real-time overlay.",
-      "tech": ["Python", "OpenCV", "MediaPipe", "Deep Learning", "AR engine"]
+      "description": "AI-powered virtual dressing room using computer vision and augmented reality. Users can try clothes virtually using webcam and real-time overlay technology.",
+      "tech": ["Python", "OpenCV", "MediaPipe", "Deep Learning", "AR"],
+      "github": "https://github.com/kaushiki2024/trylia",
+      "image": "/projects/trylia.jpg"
     },
     {
-      "title": "Face Detection using OpenCV",
-      "description": "Real-time face detection with Haar Cascade classifiers.",
-      "tech": ["Python", "OpenCV"]
+      "title": "Air Quality Prediction",
+      "description": "Machine learning model to predict NO₂ levels using environmental data. Implements various ML algorithms for accurate air quality forecasting.",
+      "tech": ["Python", "scikit-learn", "Pandas", "NumPy", "Matplotlib"],
+      "github": "https://github.com/kaushiki2024/air-quality-prediction",
+      "image": "/projects/air-quality.jpg"
+    },
+    {
+      "title": "Face Detection with OpenCV",
+      "description": "Real-time face detection system using Haar Cascade classifiers. Processes video streams for instant face recognition and tracking.",
+      "tech": ["Python", "OpenCV", "Computer Vision"],
+      "github": "https://github.com/kaushiki2024/face-detection",
+      "image": "/projects/face-detection.jpg"
     }
   ],
   "experience": [
@@ -39,9 +68,9 @@
       "company": "Excellent Softwares, Noida",
       "year": "2025 (45 days)",
       "details": [
-        "Developed Python-based internal apps",
-        "Contributed to debugging and testing",
-        "Collaborated in agile teams"
+        "Developed Python-based internal applications",
+        "Contributed to debugging and testing processes",
+        "Collaborated in agile development teams"
       ]
     }
   ],
@@ -56,7 +85,9 @@
     { "degree": "Class X", "college": "Carmel Girls Inter College", "years": "2019" }
   ],
   "achievements": [
-    "Solved 476 problems on CodeChef, 30 on LeetCode, active on Codeforces",
+    "Solved 476+ problems on CodeChef",
+    "30+ problems solved on LeetCode",
+    "Active participant on Codeforces",
     "CSE Department Honors Award (1st–3rd year)",
     "Participant in Smart India Hackathon (SIH)"
   ],
