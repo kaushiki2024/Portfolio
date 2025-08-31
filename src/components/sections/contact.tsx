@@ -40,67 +40,8 @@ export function Contact() {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    if (!validateForm()) {
-      return;
-    }
+  
 
-    setIsSubmitting(true);
-    setSubmitStatus("idle");
-
-    try {
-      // 1. Send message to you
-      await emailjs.send(
-        "service_bcj1h3e",
-        "template_1k0ymfg",
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          message: formData.message,
-          to_name: "Kaushiki Mishra",
-        },
-        "9BF-X8HvJNTIfsKtU"
-      );
-
-      // 2. Auto-reply back to sender
-      await emailjs.send(
-        "service_bcj1h3e",
-        "template_5nqonce",
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          message: formData.message,
-        },
-        "9BF-X8HvJNTIfsKtU"
-      );
-
-      setSubmitStatus("success");
-      setFormData({ name: "", email: "", message: "" });
-    } catch (error) {
-      console.error(error);
-      setSubmitStatus("error");
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
-  // ✅ move handleChange OUTSIDE handleSubmit
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-
-    if (errors[name]) {
-      setErrors({
-        ...errors,
-        [name]: "",
-      });
-    }
-  };
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
