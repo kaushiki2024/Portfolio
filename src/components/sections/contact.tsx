@@ -338,17 +338,7 @@ export function Contact() {
                 </motion.button>
               </form>
 
-              {/* Setup Instructions */}
-              <div className="mt-6 p-4 bg-muted/50 rounded-lg">
-                <p className="text-xs text-muted-foreground">
-                  <strong>Note:</strong> To make the contact form work, you need to set up EmailJS. 
-                  Get your credentials from <a href="https://www.emailjs.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">emailjs.com</a> 
-                  and replace the placeholder values in the code.
-                </p>
-              </div>
-            </div>
-          </motion.div>
-        </div>
+     
 
         {/* Footer Note */}
         <motion.div
