@@ -52,35 +52,31 @@ export function Contact() {
 
     try {
       // EmailJS configuration - you'll need to set these up
-      const result = await emailjs.send(
-        "YOUR_SERVICE_ID", // Replace with your EmailJS service ID
-        "YOUR_TEMPLATE_ID", // Replace with your EmailJS template ID
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          message: formData.message,
-          to_name: "Kaushiki Mishra",
-        },
-        "YOUR_PUBLIC_KEY" // Replace with your EmailJS public key
-      );
+   // 1. Send message to you (Contact Template)
+const result = await emailjs.send(
+  "service_bcj1h3e",
+  "template_1k0ymfg", // 📩 Contact template
+  {
+    from_name: formData.name,
+    from_email: formData.email,
+    message: formData.message,
+    to_name: "Kaushiki Mishra",
+  },
+  "9BF-X8HvJNTIfsKtU"
+);
 
-      if (result.status === 200) {
-        setSubmitStatus("success");
-        setFormData({ name: "", email: "", message: "" });
-        setErrors({});
-        
-        // Reset success message after 5 seconds
-        setTimeout(() => setSubmitStatus("idle"), 5000);
-      } else {
-        setSubmitStatus("error");
-      }
-    } catch (error) {
-      console.error("Email send failed:", error);
-      setSubmitStatus("error");
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+// 2. Auto-reply back to the sender
+await emailjs.send(
+  "service_bcj1h3e",
+  "template_5nqonce", // 🤖 Auto-reply template
+  {
+    from_name: formData.name,
+    from_email: formData.email,
+    message: formData.message,
+  },
+  "9BF-X8HvJNTIfsKtU"
+);
+
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
