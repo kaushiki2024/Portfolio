@@ -81,7 +81,7 @@ export function Hero() {
                 className="relative w-80 h-80 lg:w-96 lg:h-96"
               >
                 <Image
-                  src="/profile.svg"
+                  src="/profile.jpg"
                   alt={site.name}
                   fill
                   className="rounded-full object-cover shadow-2xl"
