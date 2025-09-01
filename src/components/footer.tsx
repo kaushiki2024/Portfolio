@@ -8,8 +8,8 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-background border-t border-border">
-      <div className="container-custom py-12">
+    <footer className="bg-gradient-to-r from-background via-muted/20 to-background border-t border-border">
+      <div className="container-custom py-16">
         <div className="grid md:grid-cols-3 gap-8 items-center">
           {/* Logo and Description */}
           <motion.div

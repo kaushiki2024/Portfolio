@@ -19,20 +19,20 @@ export function Hero() {
       <AnimatedBackground />
       
       <div className="container-custom relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left side - Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="space-y-8 text-center lg:text-left"
+            className="space-y-10 text-center lg:text-left"
           >
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              <h1 className="text-5xl lg:text-7xl font-bold mb-4">
+              <h1 className="text-6xl lg:text-8xl font-black mb-6 leading-tight">
                 <span className="gradient-text">{site.name}</span>
               </h1>
             </motion.div>
@@ -41,7 +41,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="text-xl lg:text-2xl text-muted-foreground mb-8"
+              className="text-2xl lg:text-3xl text-muted-foreground mb-10"
             >
               <Typewriter words={site.typewriter} className="text-2xl lg:text-3xl" />
             </motion.div>
@@ -50,7 +50,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+              className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start"
             >
               <button
                 onClick={() => scrollToSection("projects")}

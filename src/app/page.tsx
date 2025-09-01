@@ -9,7 +9,7 @@ import { Contact } from "@/components/sections/contact";
 
 export default function HomePage() {
   return (
-    <main className="container space-y-24 pt-24 pb-16">
+    <main className="container space-y-32 pt-24 pb-16">
       <Hero />
       <About />
       <Skills />
