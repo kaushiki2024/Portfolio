@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 export function AnimatedBackground() {
   const [mounted, setMounted] = useState(false);
-  const particles = Array.from({ length: 20 }, (_, i) => i);
+  const particles = Array.from({ length: 30 }, (_, i) => i);
 
   useEffect(() => {
     setMounted(true);

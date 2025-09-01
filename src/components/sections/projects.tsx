@@ -24,7 +24,7 @@ export function Projects() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
           {site.projects.map((project, index) => (
             <motion.div
               key={project.title}
@@ -32,15 +32,16 @@ export function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="project-card group"
+              className="project-card group hover-lift"
             >
               <div className="p-6 space-y-4">
                 {/* Project Image Placeholder */}
-                <div className="relative h-48 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-lg overflow-hidden">
+                <div className="relative h-48 bg-gradient-to-br from-primary/15 via-secondary/10 to-accent/10 rounded-xl overflow-hidden">
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-4xl opacity-20">📊</div>
+                    <div className="text-4xl opacity-30">📊</div>
                   </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+                  <div className="absolute inset-0 shimmer" />
                 </div>
 
                 {/* Project Content */}

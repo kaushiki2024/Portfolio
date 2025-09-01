@@ -23,22 +23,22 @@ export function Skills() {
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full" />
         </motion.div>
 
-        {/* Tabs */}
+        {/* Enhanced Tabs */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
-          className="flex flex-wrap justify-center gap-2 mb-12"
+          className="flex flex-wrap justify-center gap-3 mb-16"
         >
           {Object.keys(site.skills).map((category) => (
             <motion.button
               key={category}
               onClick={() => setActiveTab(category)}
-              className={`px-6 py-3 rounded-lg font-medium transition-all duration-300 ${
+              className={`px-8 py-4 rounded-xl font-semibold transition-all duration-500 ${
                 activeTab === category
-                  ? "bg-primary text-white shadow-lg"
-                  : "bg-muted text-muted-foreground hover:bg-primary/10"
+                  ? "bg-gradient-to-r from-primary to-secondary text-white shadow-xl"
+                  : "bg-muted/50 text-muted-foreground hover:bg-primary/10 hover:scale-105"
               }`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -48,13 +48,13 @@ export function Skills() {
           ))}
         </motion.div>
 
-        {/* Skills Grid */}
+        {/* Enhanced Skills Grid */}
         <motion.div
           key={activeTab}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
         >
           {(site.skills as any)[activeTab].map((skill: string, index: number) => (
             <motion.div
@@ -62,8 +62,8 @@ export function Skills() {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.3, delay: index * 0.05 }}
-              className="skill-tag text-center cursor-pointer"
-              whileHover={{ scale: 1.05, y: -2 }}
+              className="skill-tag text-center cursor-pointer hover-scale"
+              whileHover={{ scale: 1.05, y: -3 }}
             >
               {skill}
             </motion.div>

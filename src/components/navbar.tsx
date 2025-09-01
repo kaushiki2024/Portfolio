@@ -58,7 +58,7 @@ export function Navbar() {
           {/* Logo */}
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="text-xl font-bold gradient-text cursor-pointer"
+            className="text-2xl font-black gradient-text cursor-pointer hover:scale-110 transition-transform duration-300"
             onClick={() => scrollToSection("#hero")}
           >
             KM
@@ -70,11 +70,11 @@ export function Navbar() {
               <motion.button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative group"
-                whileHover={{ y: -2 }}
+                className="text-sm font-semibold text-muted-foreground hover:text-foreground transition-all duration-300 relative group"
+                whileHover={{ y: -3, scale: 1.05 }}
               >
                 {item.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary transition-all duration-300 group-hover:w-full" />
+                <span className="absolute -bottom-1 left-0 w-0 h-1 bg-gradient-to-r from-primary via-secondary to-accent transition-all duration-500 group-hover:w-full rounded-full" />
               </motion.button>
             ))}
           </div>
